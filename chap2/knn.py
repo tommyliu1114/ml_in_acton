@@ -27,11 +27,11 @@ def file2matrix(filename):
     returnMat = zeros((numberOfLines,3))
     classLabelVector = []
     index = 0
-    for line in arrayOfLines:
+    for line in arrayOLines:
         line = line.strip()
         listFromLine = line.split('\t')
         returnMat[index,:] = listFromLine[0:3]
-        classLabelVecotr.append(int(listFromLine[-1]))
+        classLabelVector.append(int(listFromLine[-1]))
         index += 1
-    return retrunMat,classLabelVector
+    return returnMat,classLabelVector
         
